@@ -1,0 +1,96 @@
+{
+  "users": {
+    "validUser": {
+      "email": "logiammu123@gmail.com",
+      "password": "Logi@515",
+      "firstName": "Logi",
+      "lastName": "Ammu"
+    },
+    "invalidUser": {
+      "email": "invalid@example.com", 
+      "password": "wrongpassword"
+    },
+    "adminUser": {
+      "email": "admin@example.com",
+      "password": "adminpass123",
+      "role": "admin"
+    }
+  },
+  "contactForm": {
+    "validData": {
+      "firstName": "Logi",
+      "lastName": "Ammu", 
+      "email": "logiammu123@gmail.com",
+      "phone": "+91 9876543210",
+      "company": "TapTime Demo Company",
+      "message": "This is a demo contact form submission for E2E testing. Testing the complete contact flow with all form fields filled properly. Thank you for providing this amazing time tracking solution!"
+    },
+    "invalidData": {
+      "firstName": "",
+      "lastName": "",
+      "email": "invalid-email",
+      "message": ""
+    }
+  },
+  "employees": {
+    "newEmployee": {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "jane.smith@company.com",
+      "phone": "9876543210",
+      "department": "Engineering",
+      "position": "Software Developer"
+    }
+  },
+  "reports": {
+    "dateRange": {
+      "startDate": "2024-01-01",
+      "endDate": "2024-01-31"
+    },
+    "filters": {
+      "department": "Engineering",
+      "employee": "All Employees"
+    }
+  },
+  "api": {
+    "endpoints": {
+      "login": "/auth/login",
+      "register": "/auth/register", 
+      "employees": "/api/employees",
+      "reports": "/api/reports"
+    }
+  },
+  "selectors": {
+    "navigation": {
+      "homeLink": "a[href='/']",
+      "loginLink": "a[href='/login']",
+      "employeeManagementLink": "a[href='/employee-management']",
+      "reportsLink": "a[href='/reports']",
+      "profileLink": "a[href='/profile']"
+    },
+    "forms": {
+      "loginForm": "form",
+      "emailInput": "input[name='email']",
+      "passwordInput": "input[name='password']",
+      "submitButton": "button[type='submit']",
+      "contactForm": "#contact form"
+    },
+    "buttons": {
+      "getStarted": "button:contains('Get Started')",
+      "signIn": "button:contains('Sign in')",
+      "signUp": "button:contains('Sign up')",
+      "googleSignIn": "button:contains('Sign in with Google')"
+    }
+  },
+  "timeouts": {
+    "short": 2000,
+    "medium": 5000,
+    "long": 10000
+  },
+  "viewports": {
+    "mobile": { "width": 375, "height": 667 },
+    "tablet": { "width": 768, "height": 1024 },
+    "desktop": { "width": 1280, "height": 720 },
+    "largeDesktop": { "width": 1920, "height": 1080 }
+  }
+}
