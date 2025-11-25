@@ -3,7 +3,7 @@ const { defineConfig } = require('cypress')
 module.exports = defineConfig({
   projectId: "c52jbq",
   e2e: {
-    baseUrl: 'https://taptime-react-logeshwariarjavas-projects.vercel.app',
+    baseUrl: "https://logeshwariajava.github.io/Taptime-Testing/",
     setupNodeEvents(on, config) {
      
     },
