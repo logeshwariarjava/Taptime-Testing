@@ -1,11 +1,13 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
-  projectId: "uyrqmq",
+  projectId: "c52jbq",
   e2e: {
-    baseUrl: 'https://taptime-testing.vercel.app',
+    baseUrl: 'http://localhost:5173',
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+     
     },
+    
   },
 })
+
