@@ -42,7 +42,7 @@ Cypress.Commands.add('fillContactForm', (formData) => {
 // Wait for page load
 Cypress.Commands.add('waitForPageLoad', () => {
   cy.get('body').should('be.visible')
-  cy.wait(1000)
+  cy.get('body').should('not.be.empty')
 })
 
 // Check if element exists without failing
