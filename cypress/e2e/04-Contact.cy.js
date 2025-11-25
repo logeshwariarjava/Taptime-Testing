@@ -11,7 +11,7 @@ describe('TapTime - Contact Form Tests', () => {
   beforeEach(() => {
     cy.visit('/')
     cy.waitForPageLoad()
-    cy.get('#contact').scrollIntoView()
+    cy.contains('Get in Touch').scrollIntoView()
   })
 
   it('should fill and submit contact form with validation', () => {
@@ -60,7 +60,7 @@ describe('TapTime - Contact Form Tests', () => {
   it('should be responsive on mobile', () => {
     cy.viewport(375, 667)
     cy.reload()
-    cy.get('#contact').scrollIntoView()
+    cy.contains('Get in Touch').scrollIntoView()
     cy.get('input[name="firstName"]').should('be.visible')
     cy.get('input[name="email"]').should('be.visible')
     cy.get('textarea[name="message"]').should('be.visible')
