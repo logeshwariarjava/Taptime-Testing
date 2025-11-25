@@ -3,7 +3,7 @@ import { defineConfig } from 'cypress'
 export default defineConfig({
   projectId: "c52jbq",
   e2e: {
-    baseUrl: "https://taptime-react-logeshwariarjavas-projects.vercel.app",
+    baseUrl: "https://example.cypress.io",
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
